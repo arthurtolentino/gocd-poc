@@ -5,4 +5,16 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>poc</name>
   <description>poc</description>
+  <scm>
+  	<url>https://github.com/arthurtolentino/gocd-poc</url>
+  	<connection>scm:git:git://github.com/arthurtolentino/gocd-poc.git</connection>
+  	<developerConnection>scm:git:git@github.com/arthurtolentino/gocd-poc.git</developerConnection>
+  </scm>
+  <dependencies>
+  	<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+    </dependency>
+  </dependencies>
 </project>
