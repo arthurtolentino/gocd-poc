@@ -10,6 +10,20 @@
   	<connection>scm:git:git@github.com:arthurtolentino/gocd-poc.git</connection>
   	<developerConnection>scm:git:git@github.com:arthurtolentino/gocd-poc.git</developerConnection>
   </scm>
+  
+  <distributionManagement>
+	<repository>
+		<id>releases</id>
+		<name>Releases</name>
+		<url>${releases.repos.url}</url>
+	</repository>
+	<snapshotRepository>
+		<id>snapshots</id>
+		<name>Snapshots</name>
+		<url>${snapshots.repos.url}</url>
+	</snapshotRepository>
+  </distributionManagement>
+    
   <dependencies>
   	<dependency>
       <groupId>junit</groupId>
