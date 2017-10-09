@@ -15,12 +15,12 @@
 	<repository>
 		<id>releases</id>
 		<name>Releases</name>
-		<url>${releases.repos.url}</url>
+		<url>http://127.0.0.1</url>
 	</repository>
 	<snapshotRepository>
 		<id>snapshots</id>
 		<name>Snapshots</name>
-		<url>${snapshots.repos.url}</url>
+		<url>http://127.0.0.1</url>
 	</snapshotRepository>
   </distributionManagement>
     
