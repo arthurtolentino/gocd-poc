@@ -8,6 +8,7 @@
   <scm>
   	<url>https://github.com/arthurtolentino/gocd-poc</url>
   	<connection>scm:git:git@github.com:arthurtolentino/gocd-poc.git</connection>
+  	<developerConnection>scm:git:git@github.com:arthurtolentino/gocd-poc.git</developerConnection>
   </scm>
   <dependencies>
   	<dependency>
