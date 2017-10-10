@@ -4,6 +4,8 @@ set -e
 ENV=$1
 APP_VERSION=$2
 
+echo 'foo'
+
 curl -X POST 'http://mockbin.org/echo' \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
