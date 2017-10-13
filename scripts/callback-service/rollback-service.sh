@@ -6,4 +6,5 @@ echo "service id = $SERVICE_ID"
 echo 'performing rollback...'
 
 (curl -u "$RANCHER_API_USERNAME:$RANCHER_API_PASSWORD" \
--X POST "$RANCHER_HOST/v2-beta/projects/1a11/services/$SERVICE_ID/?action=rollback" | cat)
+-X POST "$RANCHER_HOST/v2-beta/projects/1a11/services/$SERVICE_ID/?action=rollback" \
+--write-out "response code: %{http_code}" --output /dev/null | cat)
