@@ -70,7 +70,7 @@
             "name":null,
             "port":8081,
             "reinitializingTimeout":180000,
-            "requestLine":"GET \"/callback-service/v1/healthcheck\" \"HTTP/1.1\\r\\nHost: services-tst.doradosystems.com\"",
+            "requestLine":"GET \"/callback-service/v1/healthcheck\" \"HTTP/1.1\\r\\nHost: services.tst.doradosystems.com:8081\"",
             "responseTimeout":2000,
             "unhealthyThreshold":3
          },
