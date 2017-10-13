@@ -14,6 +14,6 @@ status=$(curl --write-out %{http_code} --silent --output \
 
 echo "status code: $status"
 
-if [ $status -ne 202 ]; then
+if [ $status -ne 200 ]; then
 	exit 1
 fi
