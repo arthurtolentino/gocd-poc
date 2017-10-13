@@ -1,9 +1,6 @@
 #!/bin/sh
 set -e
 
-USERNAME=$1
-PASSWORD=$2
-
 echo 'performing upgrade...'
 
 status=$(curl --write-out %{http_code} --silent --output \
