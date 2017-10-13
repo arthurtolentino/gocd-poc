@@ -1,9 +1,9 @@
 #!/bin/sh
 set -e
 
-echo 'performing upgrade...'
 echo "rancher = $RANCHER_HOST"
 echo "service id = $SERVICE_ID"
+echo 'performing upgrade...'
 
 status=$(curl --write-out %{http_code} --silent --output \
 /dev/null -u "$RANCHER_API_USERNAME:$RANCHER_API_PASSWORD" \
@@ -12,7 +12,7 @@ status=$(curl --write-out %{http_code} --silent --output \
 -H 'Content-Type: application/json' \
 --data-binary '@upgrade-callback-service.json')
 
-echo "status code: $status"
+echo "response code: $status"
 
 if [ $status -ne 200 ]; then
 	exit 1

@@ -26,7 +26,7 @@ while true; do
   if [ $retry -eq $POLL_DEPLOY_MAX_RETRY ]; then
     $(rollback)
   else
-    echo 'sleeping...'
+    echo "sleeping for $WAIT_INTERVAL_SECONDSs"
     sleep $WAIT_INTERVAL_SECONDS
   fi
 done
