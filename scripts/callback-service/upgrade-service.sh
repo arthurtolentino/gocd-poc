@@ -2,6 +2,8 @@
 set -e
 
 echo 'performing upgrade...'
+echo "rancher = $RANCHER_HOST"
+echo "service id = $SERVICE_ID"
 
 status=$(curl --write-out %{http_code} --silent --output \
 /dev/null -u "$RANCHER_API_USERNAME:$RANCHER_API_PASSWORD" \

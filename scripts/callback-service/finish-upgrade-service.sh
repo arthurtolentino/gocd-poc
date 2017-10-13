@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+echo "rancher = $RANCHER_HOST"
+echo "service id = $SERVICE_ID"
+
 retry=0
 while true; do
   echo 'waiting for upgrade to complete...'
